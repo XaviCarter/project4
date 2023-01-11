@@ -4,6 +4,9 @@ var fillValue = '#F9F108';
 var circleX, circleY, circleRad;
 var openDoor = false;
 
+let door1Y = 50;
+let door2Y = 600;
+
 
 
 function setup() {
@@ -34,6 +37,15 @@ function draw() {
     
 
     if(openDoor==true) {
+        for (let door1Y = 50; door1Y > -550; door1Y++) {
+        }
+        for (let door2Y = 600; door2Y < 1150; door2Y--) {
+
+        }
+       
+        
+
+        }
 
         
     }
@@ -55,10 +67,10 @@ function draw() {
 
     //doors
     fill('#F9F108')
-    rect(50, 50, 1600, 550)
+    rect(50, door1Y, 1600, 550)
 
     fill('#F9F108')
-    rect(50, 600, 1600, 550)
+    rect(50, door2Y, 1600, 550)
     
     //radiation symbol
     fill(0);
